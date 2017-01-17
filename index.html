@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Twitchê Games</title>
+		<link rel="stylesheet" type="text/css" media="all" href="style.css">
+
+		<script src="script.js"></script>
+
+
+
+	</head>
+	<body>
+		<div class="main">
+			<div align="center" class="header"><img src="Imagens/banner3.png" class="banner"></div>
+		
+			<!--MENU-->			
+					<div class="subHeader" align="center">Trabalho desenvolvido na disciplina de LPW<br>Desenvolvido por Paulo Souza</div>
+			<!--END OF MENU-->
+			<div class="content">
+
+				<div class="left">
+					
+				<div class="profile">
+					<img src="Imagens/profile.jpg" class="profilePicture" title="Foto de Perfil">
+					<div class="information">
+						<table align="center">
+							<tr>
+								<th colspan="2"><a>Ranger Vermelho</a></th>
+							</tr>
+							<tr>
+								<td>Nickname:</td>
+								<td>@<input type="text" id="nickname" size="13" title="Altere seu apelido" value="RedRanger"></td>
+							</tr>
+							<tr>
+								<td>Cidade:</td>
+								<td>Alameda dos Anjos</td>
+							</tr>
+							<tr>
+								<td>Tweets:</td>
+								<td id="totalTweets">0</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+				<div class="trends2">
+					<h3 align="center" id="totalTweets">Tweet mais curtido</h3>
+					<h5 align="center" id="totalTweets2">Likes:<span id="totalVotos"> 0</span></h5>
+					<div class="topTweet" id="maisCurtido">" Poste e curta o seu tweet preferido! :D "</div>
+				</div>
+
+				<div class="trends">
+					<div id="maisCurtido">
+						<h4 align="center" id="totalTweets">1º Lugar:</h2>
+						<img src="Imagens/qm.png" id="maisVotado">
+						<div align="center" class="cont">
+							<div id="titMaisVotado">VOTE AGORA!</div>
+							<div id="rodapeMaisVotado"> <b>Plataforma:</b><span id="plataforma">-</span> <b>Votos:</b> <span id="votos">-</span></div>
+						</div>
+					</div>
+
+					<h4 class="topPosts" align="center">Melhor jogo da história:</h4>
+					
+							<form class="games">
+								<input type="radio" name="game" id="supermario" />
+								Super Mario World <span class ="spanVotos" id="votosMario"> (0)</span><br>
+								<input type="radio" name="game" id="pokemonyellow" />
+								Pokémon Yellow<span class ="spanVotos" id="votosPoke"> (0)</span><br>
+								<input type="radio" name="game" id="winningeleven10" />
+								Winning Eleven 10<span class ="spanVotos" id="votosWe"> (0)</span><br>
+								<input type="radio" name="game" id="thelastofus" />
+								The Last of Us<span class ="spanVotos" id="votosTlou"> (0)</span><br>
+								<input type="radio" name="game" id="counterstrike" />
+								Counter Strike 1.6<span class ="spanVotos" id="votosCs"> (0)</span><br>
+							</form>
+						
+						<p align="center"><button type="button" class="button2" onclick="votar()" title="Clique para votar!"> Votar </button></p>
+					
+				</div>
+
+				</div>
+
+				<div class="right">
+					<div class="topFixed">
+						<textarea id="novaMensagem" placeholder="Digite sua mensagem..."></textarea>
+						<button class="button" onclick="enviaMsg()" title="Clique para enviar">Enviar mensagem</button>
+					</div>
+
+					<div class="titleTweets" align="center"><img src="Imagens/tweets.png"></div>
+					
+					<div id="recebeMsg" class="messages">
+						<div id="1"></div>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="footer">
+				<p>-Twitchê Games-<br>Todos os direitos reservados</p>
+			</div>
+		</div>
+		
+
+	</body>
+	
+
+</html>
